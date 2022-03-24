@@ -6,6 +6,10 @@ The repository containing data access and information about the SUPS dataset
 
 ![](video_0.gif)
 
+![](video_2.gif)
+
+![](video_3.gif)
+
 ## Abstract
 Automatic underground parking has attracted considerable attention as the scope of autonomous driving expands. The perception tasks of ground signs, vehicles, obstacles, lanes, and parking slots and simultaneous localization and mapping (SLAM) tasks are challenging due to the signal shielding of the Global Navigation Satellite System (GNSS), dim conditions, and ground reflections. Numerous carefully labeled frames are required for the mainstream tasks with well-trained networks and developed SLAM methods. However, few open-source datasets are suitable to support all these tasks for the underground scenario at the same time. In this paper, we intend to cover the defect of existing datasets with the variability of environments and the diversity and accessibility of sensors in the virtual scene. Specifically, we present SUPS, a simulated dataset for underground automatic parking, which supports multiple tasks with multiple sensors. The dataset records frames from four surrounding fisheye cameras, two forward pinhole cameras, a depth camera, and data from LiDAR, inertial measurement unit (IMU), GNSS, and other sensors. Perception, 3D reconstruction, SLAM, and other relative tasks are supported by our dataset. We also evaluate the state-of-the-art SLAM algorithms and perception models on our dataset.
 
