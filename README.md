@@ -4,7 +4,7 @@ The repository containing data access and information about the SUPS dataset
 ## Demo
 ![](video_1.gif)
 
-![](video_0.gif)
+![](video_4.gif)
 
 ![](video_2.gif)
 
