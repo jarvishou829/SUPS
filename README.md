@@ -30,24 +30,26 @@ SUPS
 |  |SUPS_scene.zip
 |  |
 ⌊__bag_file
-|  |calibration.json
-|  |ORB3_stereo_inertial.yaml
-|  |VINS_F_stereo_inertial.yaml
-|  |LIO-SAM.yaml
-|  |LoopA_fast_direct.bag
-|  |LoopA_fast_disturbed.bag
-|  |...
+|  ⌊__config
+|  |  |calibration.json
+|  |  |ORB3_stereo_inertial.yaml
+|  |  |VINS_F_stereo_inertial.yaml
+|  |  |LIO-SAM.yaml
+|  ⌊__bags
+|  |  |LoopA_fast_direct.bag
+|  |  |LoopA_fast_disturbed.bag
+|  |  |...
 |  |
-⌊__BEV_segmentation
+⌊__BEV_data
+   |  train.csv
+   |  val.csv
+   |  test.csv
+   |  divide.py
    ⌊__images
-   |  |train
-   |  |val
-   |  test
-   |  |
+   |  |***.png
+   |  |...
    ⌊__labels
-      |train
-      |val
-      |test
+      |
 ```
 ## Usage
 ### Virtual scene
@@ -57,6 +59,7 @@ The sensors setups can be found in calibration.json. For getting start easily an
 
 For example:
 ```
+#ORB-SLAM3 stereo_inertial
 #terminal 1
 
 #terminal 2
@@ -64,4 +67,4 @@ rosbag play LoopA_fast_direct.bag
 
 ```
 ### Semantic segmentation
-We use Bisenet and xxx for example.
+We use Bisenet and SFNet for example. Pretrained models are provided for test.
