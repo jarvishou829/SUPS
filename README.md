@@ -58,6 +58,8 @@ SUPS
    ⌊__labels
       |
 ```
+
+Coming soon: bags recorded at low speed level.
 ## Usage
 ### Virtual scene
 To record data from the virtual scene, import our scene into your Unity simulator project and get start following the [LGSVL](https://www.svlsimulator.com/) tutorial.
