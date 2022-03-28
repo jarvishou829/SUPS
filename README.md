@@ -69,6 +69,14 @@ The sensors setups can be found in calibration.json. For getting start easily an
 For example:
 ```
 #ORB-SLAM3 stereo_inertial
+# clone ORB-SLAM3 repository
+git clone https://github.com/UZ-SLAMLab/ORB_SLAM3.git ORB_SLAM3
+# get the prerequisites according to their repo, then
+cd ORB_SLAM3
+chmod +x build.sh
+./build.sh
+chmod +x build_ros.sh
+./build_ros.sh
 #terminal 1
 rosrun ORB_SLAM3 Stereo_Inertial PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE ONLINE_RECTIFICATION [EQUALIZATION]
 #terminal 2
