@@ -85,3 +85,74 @@ rosbag play LoopA_fast_direct_stereo.bag
 ```
 ### Semantic segmentation
 We use [Bisenet](https://arxiv.org/abs/1808.00897) and [SFNet](https://arxiv.org/abs/2002.10120) for example. Pretrained models are provided for test.
+
+**BiSeNetV1**
+
+<details open>
+  <summary><strong>Requirements</strong></summary>
+
+* python >= 3.6
+* torch >= 1.8.1
+* torchvision >= 0.9.1
+
+Other requirements can be installed with `pip install -r requirements.txt`.
+
+
+**prepare dataset**
+
+Add the absolute path of your image dataset to the script, and then try:
+```bash
+python prepare_dataset.py
+```
+
+
+**train**
+
+I used the following command to train the models:
+```bash
+if you have more gpus you can try more.
+export CUDA_VISIBLE_DEVICES=0
+cfg_file=configs/bisenetv1_city.py
+NGPUS=1
+python -m torch.distributed.launch --nproc_per_node=$NGPUS tools/train_amp.py --config $cfg_file 
+```
+
+**eval pretrained models**
+You can also evaluate a trained model like this: 
+```
+$ python tools/evaluate.py --config configs/bisenetv1_slam.py --weight-path res/model_final.pth
+```
+
+**reference**
+* https://github.com/CoinCheung/BiSeNet
+   
+**SFNET**
+
+<details open>
+  <summary><strong>Requirements</strong></summary>
+
+* python >= 3.6
+* torch >= 1.8.1
+* torchvision >= 0.9.1
+
+Other requirements can be installed with `pip install -r requirements.txt`.
+
+**Train**
+
+Firstly, you need to configure the path of csv files in the config file. To train with a single GPU:
+
+```bash
+$ python tools/train.py --cfg configs/parkingslotsSFNet.yaml
+```
+
+**Evaluation**
+
+Make sure to set `MODEL_PATH` of the configuration file to your trained model directory.
+
+```bash
+$ python tools/val.py --cfg configs/parkingslotsSFNet.yaml.yaml
+```
+
+**References**
+
+* https://github.com/sithu31296/semantic-segmentation
