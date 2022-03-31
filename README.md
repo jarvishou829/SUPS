@@ -65,6 +65,11 @@ Coming soon: bags recorded at low speed level.
 ## Usage
 ### Virtual scene
 To record data from the virtual scene, import our scene into your Unity simulator project and get start following the [LGSVL](https://www.svlsimulator.com/) tutorial.
+
+The zip file contains the scene which can be imported into Unity. (See [LGSVL-build-instruction](https://www.svlsimulator.com/docs/installation-guide/build-instructions/))
+
+The SUPS_scene file has already been built which can be uploaded as map. (See [LGSVL-add-map](https://wise.svlsimulator.com/maps/profile/add))
+
 ### SLAM tasks
 The sensors setups can be found in calibration.json. For getting start easily and reproducing the video above, we provide the yaml file according to [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) , [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion), and [LIO_SAM](https://github.com/TixiaoShan/LIO-SAM) format. See their tutorials to run the demos.
 
