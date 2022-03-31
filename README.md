@@ -37,6 +37,7 @@ SUPS
 |  
 ⌊__virtual_scene
 |  |SUPS_scene.zip
+|  |SUPS_scene
 |  |
 ⌊__bag_file
 |  ⌊__config
