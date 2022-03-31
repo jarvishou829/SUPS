@@ -31,10 +31,10 @@ Since BEV images are especially helpful in perception and decision making when o
 ## Data organization
 ```
 SUPS
-| README.md
-|  |BiSeNet.zip
-|  |SFNet.zip
-|  |
+|  README.md
+|  BiSeNet.zip
+|  SFNet.zip
+|  
 ⌊__virtual_scene
 |  |SUPS_scene.zip
 |  |
