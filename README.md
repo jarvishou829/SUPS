@@ -167,3 +167,13 @@ $ python tools/val.py --cfg configs/parkingslotsSFNet.yaml.yaml
 **References**
 
 * https://github.com/sithu31296/semantic-segmentation
+
+## Reference
+```
+@article{sups2022,
+  title={SUPS: A Simulated Dataset of Underground Parking Scenario for Perception and SLAM Tasks},
+  author={Hou, Jiawei and Chen, Qi and Cheng, Yurong and Chen, Guang and Xue, Xiangyang and Zeng, Taiping and Pu, Jian},
+  booktitle={ITSC},
+  year={2022}
+}
+```
