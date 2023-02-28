@@ -1,5 +1,5 @@
 # SUPS: A Simulated Dataset of Underground Parking Scenario for Perception and SLAM Tasks
-The repository containing data access and information about the SUPS dataset
+The repository containing data access and information about the [SUPS](https://arxiv.org/pdf/2302.12966.pdf) dataset.
 
 ## News!
 Suffering from the COVID-19 in Shanghai. There are some problems uploading the complete data, some of them will be done as soon as possible.
