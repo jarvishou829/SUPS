@@ -1,8 +1,5 @@
 # SUPS: A Simulated Dataset of Underground Parking Scenario for Perception and SLAM Tasks
-The repository containing data access and information about the [SUPS](https://arxiv.org/abs/2302.12966) dataset.
-
-## News!
-Suffering from the COVID-19 in Shanghai. There are some problems uploading the complete data, some of them will be done as soon as possible.
+The repository containing data access (`data_access.txt`) and information about the [SUPS](https://arxiv.org/abs/2302.12966) dataset.
 
 ## Demo
 ![](video_1.gif)
@@ -32,6 +29,7 @@ We record our dataset in rosbag format. Records are named as Route_SpeedLimit_In
 Since BEV images are especially helpful in perception and decision making when operating automatic parking, besides the original camera frames(in ROS bags), we provide 5k+ BEV images and segmentation ground truth projected by the inverse perspective mapping(IPM) method.
 
 ## Data organization
+The link in `data_access.txt` contains configs and dataset files as listed below.
 ```
 SUPS
 |  README.md
